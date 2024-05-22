@@ -1,5 +1,7 @@
 <?php
+
 class Conexion{
+    const HOME = 'https://localhost/prestamo/';
     private $server="localhost";
     private $database = "PRESTAMOS";
     private $user="root";
@@ -14,6 +16,10 @@ class Conexion{
         }
 
         return $conect;
+    }
+
+    public static function getHome(){
+        return self::HOME;
     }
 }
 

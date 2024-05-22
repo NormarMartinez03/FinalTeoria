@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sistema de prestamo</title>
 
+    <!-- style cotumize -->
     <link rel="stylesheet" href="<?= $home ?>css/estilos.css">
    <!--  <link rel="stylesheet" href="css/datatables.css" />  -->
 
@@ -18,6 +19,7 @@
     <!--    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
     <script src="https://cdn.datatables.net/2.0.4/js/dataTables.js"></script>
 
+    <!-- fontawesome para los iconos -->
     <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
     
 </head>

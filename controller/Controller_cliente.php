@@ -8,9 +8,9 @@ class Controller_cliente extends Conexion{
 
         $query = $conect->prepare("SELECT * FROM clientes ");
         $query->execute();
-        $usuarios = $query->fetchAll(PDO::FETCH_ASSOC);
+        $clientes = $query->fetchAll(PDO::FETCH_ASSOC);
 
-        return $usuarios;
+        return $clientes;
     }
     
     function insert($cliente)
@@ -58,8 +58,20 @@ class Controller_cliente extends Conexion{
         $query->bindParam(":id", $id);
 
         $query->execute();
-        $usuarios = $query->fetch(PDO::FETCH_LAZY);
+        $cliente = $query->fetch(PDO::FETCH_LAZY);
 
-        return $usuarios;
+        return $cliente;
+    }
+
+    function loadClienteCedula($cedula){
+        $conect = $this->getConnect();
+
+        $query = $conect->prepare("SELECT * FROM clientes WHERE cedula = :cedula");
+        $query->bindParam(":cedula", $cedula);
+
+        $query->execute();
+        $cliente = $query->fetch(PDO::FETCH_LAZY);
+
+        return $cliente;
     }
 }
