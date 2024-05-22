@@ -1,6 +1,7 @@
 <?php include ("../../template/header.php") ?>
 <?php include_once ("../../controller/Controller_prestamo.php") ?>
 <?php include_once ("../../controller/Controller_cliente.php") ?>
+<?php include_once ("../../controller/Controller_cuota.php") ?>
 <?php include_once ("../../models/Cliente.php") ?>
 <?php include_once ("../../models/Prestamo.php") ?>
 
@@ -9,7 +10,9 @@ $cliente_d = new Cliente();
 $prestamo_d = new Prestamo();
 $controller_prestamo = new Controller_prestamo();
 $controller_cliente = new Controller_cliente();
+$controller_cuota = new Controller_cuota();
 
+//utilizo para buscar un cliente, para cargarle el prestamo a determinado cliente por la cedula
 if (isset($_GET["cedula_cliente"])) {
 
   $cedula = $_GET["cedula_cliente"];
@@ -18,12 +21,15 @@ if (isset($_GET["cedula_cliente"])) {
 
 if (isset($_POST["id_cliente"])) {
   $prestamo = $_POST;
+  $id_prestamo = $controller_prestamo->insert($prestamo);
+  /* print_r($id_prestamo); exit;  */
   if($prestamo["estado_prestamo"] == 'aprobado'){
-    print_r($prestamo_d->calcularAmortizacion($prestamo));
+    $cuotas = $prestamo_d->calcularAmortizacion($prestamo);
+    $controller_cuota->insert($cuotas, $id_prestamo);
   }
  /*  exit; */
   /* print_r($prestamo); exit; */
-  $controller_prestamo->insert($prestamo);
+  
   header("Location: ./index.php");
 }
 

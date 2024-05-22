@@ -15,7 +15,6 @@ class Controller_prestamo extends Conexion{
     
     function insert($prestamo)
     {
-        
         $conect = $this->getConnect();
         $query = $conect->prepare("INSERT INTO prestamos(monto_prestamo, tasa_interes, fecha_inicio, plazo_mes, estado_prestamo, id_cliente) VALUES(:monto, :tasa, :fecha, :plazo, :estado, :id);");
 
@@ -27,6 +26,11 @@ class Controller_prestamo extends Conexion{
         $query->bindParam(":id", $prestamo["id_cliente"]);
 
         $query->execute();
+        $query = $conect->prepare("SELECT LAST_INSERT_ID() AS last_id;");
+        $query->execute();
+        $id_prestamo = $query->fetch(PDO::FETCH_LAZY)["last_id"];
+
+        return $id_prestamo;
     }
     function update($prestamo)
     {
