@@ -6,7 +6,20 @@ let side_menu = document.getElementById("menu_side");
 let btn_open = document.getElementById("btn_open");
 let body = document.getElementById("body");
 /* const links_menu = document.querySelectorAll(".links_menu"); */
+let menu_option
 
+/* const all_links_menu = document.querySelectorAll(".links_menu"); */
+
+/* console.log(all_links_menu); */
+
+/* function show_submenu(link){
+    let list_class = link.classList[1];
+    const submenu = document.querySelector("."  +list_class + " > submenu")
+    console.log(submenu);
+} */
+/* all_links_menu.forEach(link =>{
+    link.addEventListener("click", show_submenu(link))
+}) */
 
 //Evento para mostrar y ocultar menú
     function open_close_menu(){

@@ -10,7 +10,7 @@
 ?>
 <script>
     const links_menu = document.querySelectorAll(".links_menu");
-    const cuotas = document.querySelector(".cuotas");
+    const cuotas = document.querySelector(".organismo");
 
     links_menu.forEach(links => {
         links.classList.remove("selected");

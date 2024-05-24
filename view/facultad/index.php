@@ -17,12 +17,13 @@
 ?>
 <script>
     const links_menu = document.querySelectorAll(".links_menu");
-    const cliente =document.querySelector(".cliente");
+    const facultad =document.querySelector(".facultad");
 
     links_menu.forEach(links => {
         links.classList.remove("selected");
     })
-    cliente.classList.add("selected");
+    facultad.classList.add("selected");
+
 </script>
 
 <div class="container_table">

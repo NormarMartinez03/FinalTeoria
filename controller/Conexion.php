@@ -1,7 +1,7 @@
 <?php
 
 class Conexion{
-    const HOME = 'https://localhost/prestamo/';
+    const HOME = 'https://localhost/propuesta/';
     private $server="localhost";
     private $database = "PRESTAMOS";
     private $user="root";
