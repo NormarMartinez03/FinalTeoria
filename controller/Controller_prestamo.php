@@ -59,7 +59,7 @@ class Controller_prestamo extends Conexion{
     function loadPrestamo($id){
         $conect = $this->getConnect();
 
-        $query = $conect->prepare("SELECT * FROM prestamos WHERE id_prestamo = :id");
+        $query = $conect->prepare("SELECT * FROM prestamos WHERE id_prestamo = :id;");
         $query->bindParam(":id", $id);
 
         $query->execute();

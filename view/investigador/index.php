@@ -17,7 +17,7 @@
 ?>
 <script>
     const links_menu = document.querySelectorAll(".links_menu");
-    const usuario =document.querySelector(".usuario");
+    const usuario =document.querySelector(".investigador");
 
     links_menu.forEach(links => {
         links.classList.remove("selected");

@@ -16,7 +16,10 @@ $controller_cuota = new Controller_cuota();
 if (isset($_GET["cedula_cliente"])) {
 
   $cedula = $_GET["cedula_cliente"];
-  $cliente_d->parseArray($controller_cliente->loadClienteCedula($cedula));
+  $cliente_cd = $controller_cliente->loadClienteCedula($cedula);
+
+  if($cliente_cd != null)$cliente_d->parseArray($cliente_cd);
+  else print ("<span class='message'>Cliente no encontrado</span>");
 }
 
 if (isset($_POST["id_cliente"])) {

@@ -1,11 +1,11 @@
-<?php $home = "https://localhost/prestamo/" ?>
+<?php $home = "https://localhost/propuesta/" ?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sistema de prestamo</title>
+    <title>Propuesta de Investigacion</title>
 
     <!-- style cotumize -->
     <link rel="stylesheet" href="<?= $home ?>css/estilos.css">
@@ -35,50 +35,124 @@
 
         <div class="name__page">
             <i class="fa-regular fa-user"></i>
-            <h4>Default user</h4>
+            <h4>Name investigador</h4>
         </div>
 
         <div class="options__menu">	
 
-            <a href="<?= $home ?>" class="links_menu selected inicio">
+            <ul class="selected">
                 <div class="option">
-                    <i class="fas fa-home" title="Inicio"></i>
-                    <h4>Inicio</h4>
+                    <div class="icon_title">
+                        <i class="fas fa-home" title="Inicio"></i>
+                        <h4>Inicio</h4>
+                    </div>
+                    <ul class="sub-menu">
+                        <li><a href="#">Item I</a></li>
+                        <li><a href="#">Item II</a></li>
+                        <li><a href="#">Item III</a></li>
+                    </ul>
                 </div>
-            </a>
+               
+            </ul>
+           <!--  <a href="" class="links_menu selected inicio">
+                <div class="option">
+                    <div class="icon_title">
+                        <i class="fas fa-home" title="Inicio"></i>
+                        <h4>Inicio</h4>
+                    </div>
+                </div>
+            </a> -->
 
-            <a href="<?= $home ?>View/usuario/" class="links_menu usuario">
+            <ul class="selected">
                 <div class="option">
-                    <i class="fa-solid fa-users" title="Usuario"></i>
-                    <h4>Usuario</h4>
+                    <div class="icon_title">
+                        <i class="fa-solid fa-file-pen" title="Investigador"></i>
+                        <h4>Investigador</h4>
+                    </div>
+                    <ul class="sub-menu">
+                        <li><a href="#">Item I</a></li>
+                        <li><a href="#">Item II</a></li>
+                        <li><a href="#">Item III</a></li>
+                    </ul>
                 </div>
-            </a>
+            </ul>
+
+           <!--  <a href="view/investigador/" class="links_menu investigador">
+                <div class="option">
+                    <div class="icon_title">
+                        <i class="fa-solid fa-file-pen" title="Investigador"></i>
+                        <h4>Investigador</h4>
+                    </div>
+                    
+                    <div class="submenu hidden">
+                        <a href="#">Item I</a>
+                        <a href="#">Item II</a>
+                        <a href="#">Item III</a>
+                        <a href="#">Item IV</a>
+                    </div>
+                </div>
+                
+            </a> -->
             
-            <a href="<?= $home ?>View/cliente/" class="links_menu cliente">
+            <a href="<?= $home ?>view/propuesta/" class="links_menu propuesta">
                 <div class="option">
-                    <i class="fa-solid fa-user-tag" title="Cliente"></i>
-                    <h4>Cliente</h4>
+                    <div class="icon_title">
+                        <i class="fa-solid fa-pen-nib" title="Propuesta"></i>
+                        <h4>Propuesta</h4>
+                    </div>
+                    <div class="submenu hidden">
+                        <h4>Item I</h4>
+                        <h4>Item II</h4>
+                        <h4>Item III</h4>
+                        <h4>Item IV</h4>
+                    </div>
                 </div>
             </a>
 
-            <a href="<?= $home ?>View/prestamo/" class="links_menu prestamo">
+            <a href="<?= $home ?>view/fuente/" class="links_menu fuente-legal">
                 <div class="option">
-                    <i class="fa-solid fa-sack-dollar" title="Prestamo"></i>
-                    <h4>Prestamo</h4>
+                    <div class="icon_title">
+                        <i class="fa-solid fa-scale-unbalanced-flip" title="Fuente Legal"></i>
+                        <h4>Fuente Legal</h4>
+                    </div>
+                    <div class="submenu hidden">
+                        <h4>Item I</h4>
+                        <h4>Item II</h4>
+                        <h4>Item III</h4>
+                        <h4>Item IV</h4>
+                    </div>
                 </div>
             </a>
 
-            <a href="<?= $home ?>View/cuotas/" class="links_menu cuotas">
+            <a href="<?= $home ?>view/facultad/" class="links_menu facultad">
                 <div class="option">
-                    <i class="fa-solid fa-wallet" title="Cuotas"></i>
-                    <h4>Cuotas</h4>
+                    <div class="icon_title">
+                        <i class="fa-solid fa-landmark" title="Facultad"></i>
+                        <h4>Facultad</h4>
+                    </div>
+                    <div class="submenu hidden">
+                        <h4 href="#mamao">Item I</h4>
+                        <h4>Item II</h4>
+                        <h4>Item III</h4>
+                        <h4>Item IV</h4>
+                    </div>
                 </div>
             </a>
 
-            <a href="<?= $home ?>View/pagos/" class="links_menu pagos">
+            <a href="<?= $home ?>view/organismo/" class="links_menu organismo">
                 <div class="option">
-                    <i class="fa-solid fa-piggy-bank" title="Pagos"></i>
-                    <h4>Pagos</h4>
+                    <div class="icon_title">
+                        <i class="fa-solid fa-building" title="Organismo"></i>
+                        <h4>Organismo</h4>
+                    </div>
+                    <div class="submenu hidden">
+                        <h4>Item I</h4>
+                        <h4>Item II</h4>
+                        <h4>Item III</h4>
+                        <h4>Item IV</h4>
+                    </div>
+                    <!-- Organismo son las fuente de organizacion  el finaciamente y demas depende de este, incluir submenu para finaciamiento-->
+
                 </div>
             </a>
 

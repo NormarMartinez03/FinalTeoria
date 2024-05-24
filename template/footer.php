@@ -1,7 +1,7 @@
-<?php $home = "https://localhost/prestamo/" ?>
+<?php $home = "https://localhost/propuesta/" ?>
 </main>
 
-<script src="<?= $home ?>/js/script.js"></script>
+<script src="<?= $home ?>js/script.js"></script>
 <!-- <link rel="stylesheet" href="/DataTables/datatables.css" /> -->
  
 <!-- <script src="js/datatables.js"></script> -->
