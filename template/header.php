@@ -157,7 +157,7 @@
             </ul> -->
             <ul class="selected">
                 <div class="option">
-                    <a href="<?=$home?>view/propuesta">
+                    <a href="<?=$home?>view/facultad">
                         <div class="icon_title">
                             <i class="fa-solid fa-landmark" title="Facultad"></i>
                             <h4>Facultad</h4>
@@ -203,7 +203,7 @@
             </a> -->
             <ul class="selected">
                 <div class="option">
-                    <a href="<?=$home?>view/propuesta">
+                    <a href="<?=$home?>view/organismo">
                         <div class="icon_title">
                             <i class="fa-solid fa-building" title="Organismo"></i>
                             <h4>Organismo</h4>
