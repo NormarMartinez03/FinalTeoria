@@ -21,7 +21,7 @@
 
     <!-- fontawesome para los iconos -->
     <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
-    
+    <!-- actividad -->
 </head>
 <body id="body">
     
