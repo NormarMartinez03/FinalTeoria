@@ -1,29 +1,4 @@
-<?php include_once ("../../template/header.php") ?>
-<?php include_once ("../../controller/Controller_user.php") ?>
-<?php include_once ("../../models/Usuario.php") ?>
-
-<?php
-    $controller_user = new Controller_user();
-
-    if(isset($_GET["cod_user"]))
-    {
-        $id = $_GET["cod_user"];
-
-        $controller_user->delete($id);
-    }
-    
-    $all_users = $controller_user->loadData();
-    $cout_user = 1;
-?>
-<script>
-    const links_menu = document.querySelectorAll(".links_menu");
-    const usuario =document.querySelector(".investigador");
-
-    links_menu.forEach(links => {
-        links.classList.remove("selected");
-    })
-    usuario.classList.add("selected");
-</script>
+<?php include_once ("../../../template/header.php") ?>
 
 <div class="container_table">
     <h2 class="title_table">LISTA DE INVESTIGADORES</h2>
@@ -59,4 +34,4 @@
         </tbody>
     </table>
 </div>
-<?php include ("../../template/footer.php") ?>
+<?php include ("../../../template/footer.php") ?>

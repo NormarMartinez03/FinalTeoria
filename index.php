@@ -1,5 +1,5 @@
 <?php include ("template/header.php") ?>
-<script>
+<!-- <script>
         const links_menu = document.querySelectorAll(".links_menu");
         const inicio = document.querySelector(".inicio");
 
@@ -8,7 +8,7 @@
         })
         inicio.classList.add("selected");
 </script>
-
+ -->
 <div class="box-perfil">
         <div class="card">
                 <div class="card-header">

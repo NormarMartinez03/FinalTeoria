@@ -8,6 +8,7 @@ let body = document.getElementById("body");
 /* const links_menu = document.querySelectorAll(".links_menu"); */
 let menu_option
 
+
 /* const all_links_menu = document.querySelectorAll(".links_menu"); */
 
 /* console.log(all_links_menu); */

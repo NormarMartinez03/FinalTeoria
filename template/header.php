@@ -41,17 +41,15 @@
         <div class="options__menu">	
 
             <ul class="selected">
-                <div class="option">
-                    <div class="icon_title">
-                        <i class="fas fa-home" title="Inicio"></i>
-                        <h4>Inicio</h4>
+                <a href="<?=$home?>">
+                    <div class="option">
+                        <div class="icon_title">
+                            <i class="fas fa-home" title="Inicio"></i>
+                            <h4>Inicio</h4>
+                        </div>
                     </div>
-                    <ul class="sub-menu">
-                        <li><a href="#">Item I</a></li>
-                        <li><a href="#">Item II</a></li>
-                        <li><a href="#">Item III</a></li>
-                    </ul>
-                </div>
+                </a>
+               
                
             </ul>
            <!--  <a href="" class="links_menu selected inicio">
@@ -65,14 +63,17 @@
 
             <ul class="selected">
                 <div class="option">
-                    <div class="icon_title">
-                        <i class="fa-solid fa-file-pen" title="Investigador"></i>
-                        <h4>Investigador</h4>
-                    </div>
-                    <ul class="sub-menu">
-                        <li><a href="#">Item I</a></li>
-                        <li><a href="#">Item II</a></li>
-                        <li><a href="#">Item III</a></li>
+                    <a href="<?=$home?>/view/investigador/">
+                        <div class="icon_title">
+                            <i class="fa-solid fa-file-pen" title="Investigador"></i>
+                            <h4>Investigador</h4>
+                        </div>
+                    </a>
+                    
+                    <ul class="sub-menu hidden">
+                        <li><a href="<?=$home?>view/investigador/categoria">Categoria</a></li>
+                        <li><a href="#">Institucion</a></li>
+                        <li><a href="#">Formacion</a></li>
                     </ul>
                 </div>
             </ul>
@@ -93,8 +94,24 @@
                 </div>
                 
             </a> -->
+            <ul class="selected">
+                <div class="option">
+                    <a href="<?=$home?>view/propuesta">
+                        <div class="icon_title">
+                            <i class="fa-solid fa-pen-nib" title="Propuesta"></i>
+                            <h4>Propuesta</h4>
+                        </div>
+                    </a>
+                   
+                    <ul class="sub-menu hidden">
+                        <li><a href="#">Item I</a></li>
+                        <li><a href="#">Item II</a></li>
+                        <li><a href="#">Item III</a></li>
+                    </ul>
+                </div>
+            </ul>
             
-            <a href="<?= $home ?>view/propuesta/" class="links_menu propuesta">
+          <!--   <a href="view/propuesta/" class="links_menu propuesta">
                 <div class="option">
                     <div class="icon_title">
                         <i class="fa-solid fa-pen-nib" title="Propuesta"></i>
@@ -107,9 +124,55 @@
                         <h4>Item IV</h4>
                     </div>
                 </div>
-            </a>
+            </a> -->
+            <ul class="selected">
+                <div class="option">
+                    <a href="<?=$home?>view/fuente">
+                        <div class="icon_title">
+                            <i class="fa-solid fa-scale-unbalanced-flip" title="Fuente Legal"></i>
+                            <h4>Fuente Legal</h4>
+                        </div>
+                    </a>
+                    
+                    <ul class="sub-menu hidden">
+                        <li><a href="#">Item I</a></li>
+                        <li><a href="#">Item II</a></li>
+                        <li><a href="#">Item III</a></li>
+                    </ul>
+                </div>
+            </ul>
 
-            <a href="<?= $home ?>view/fuente/" class="links_menu fuente-legal">
+           <!--  <ul class="selected">
+                <div class="option">
+                    <div class="icon_title">
+                        <i class="fa-solid fa-scale-unbalanced-flip" title="Fuente Legal"></i>
+                        <h4>Fuente Legal</h4>
+                    </div>
+                    <ul class="sub-menu hidden">
+                        <li><a href="#">Item I</a></li>
+                        <li><a href="#">Item II</a></li>
+                        <li><a href="#">Item III</a></li>
+                    </ul>
+                </div>
+            </ul> -->
+            <ul class="selected">
+                <div class="option">
+                    <a href="<?=$home?>view/propuesta">
+                        <div class="icon_title">
+                            <i class="fa-solid fa-landmark" title="Facultad"></i>
+                            <h4>Facultad</h4>
+                        </div>
+                    </a>
+                    
+                    <ul class="sub-menu hidden">
+                        <li><a href="#">Item I</a></li>
+                        <li><a href="#">Item II</a></li>
+                        <li><a href="#">Item III</a></li>
+                    </ul>
+                </div>
+            </ul>
+
+          <!--   <a href="view/fuente/" class="links_menu fuente-legal">
                 <div class="option">
                     <div class="icon_title">
                         <i class="fa-solid fa-scale-unbalanced-flip" title="Fuente Legal"></i>
@@ -122,9 +185,9 @@
                         <h4>Item IV</h4>
                     </div>
                 </div>
-            </a>
+            </a> -->
 
-            <a href="<?= $home ?>view/facultad/" class="links_menu facultad">
+            <!-- <a href="view/facultad/" class="links_menu facultad">
                 <div class="option">
                     <div class="icon_title">
                         <i class="fa-solid fa-landmark" title="Facultad"></i>
@@ -137,9 +200,25 @@
                         <h4>Item IV</h4>
                     </div>
                 </div>
-            </a>
-
-            <a href="<?= $home ?>view/organismo/" class="links_menu organismo">
+            </a> -->
+            <ul class="selected">
+                <div class="option">
+                    <a href="<?=$home?>view/propuesta">
+                        <div class="icon_title">
+                            <i class="fa-solid fa-building" title="Organismo"></i>
+                            <h4>Organismo</h4>
+                        </div>
+                    </a>
+                    
+                    <ul class="sub-menu hidden">
+                        <li><a href="#">Item I</a></li>
+                        <li><a href="#">Item II</a></li>
+                        <li><a href="#">Item III</a></li>
+                    </ul>
+                </div>
+            </ul>
+<!-- 
+            <a href="view/organismo/" class="links_menu organismo">
                 <div class="option">
                     <div class="icon_title">
                         <i class="fa-solid fa-building" title="Organismo"></i>
@@ -151,11 +230,10 @@
                         <h4>Item III</h4>
                         <h4>Item IV</h4>
                     </div>
-                    <!-- Organismo son las fuente de organizacion  el finaciamente y demas depende de este, incluir submenu para finaciamiento-->
+                     Organismo son las fuente de organizacion  el finaciamente y demas depende de este, incluir submenu para finaciamiento
 
                 </div>
-            </a>
-
+            </a>-->
         </div>
 
     </div>
