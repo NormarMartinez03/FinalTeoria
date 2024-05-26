@@ -1,12 +1,12 @@
 <?php
 include_once("Conexion.php");
 
-class Controller_cliente extends Conexion{
+class Controller_investigador extends Conexion{
 
     function loadData(){
         $conect = $this->getConnect();
 
-        $query = $conect->prepare("SELECT * FROM clientes ");
+        $query = $conect->prepare("SELECT * FROM investigadores ");
         $query->execute();
         $clientes = $query->fetchAll(PDO::FETCH_ASSOC);
 

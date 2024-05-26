@@ -1,19 +1,19 @@
 <?php include_once ("../../template/header.php") ?>
-<?php include_once ("../../controller/Controller_user.php") ?>
-<?php include_once ("../../models/Usuario.php") ?>
+<?php include_once ("../../controller/Controller_investigador.php") ?>
+<?php include_once ("../../models/Investigador.php") ?>
 
 <?php
-    $controller_user = new Controller_user();
+    $control = new Controller_investigador();
 
-    if(isset($_GET["cod_user"]))
+    if(isset($_GET["cod_inv"]))
     {
-        $id = $_GET["cod_user"];
+        $id = $_GET["cod_inv"];
 
-        $controller_user->delete($id);
+        $control->delete($id);
     }
     
-    $all_users = $controller_user->loadData();
-    $cout_user = 1;
+    $all_inv = $control->loadData();
+    $cout_inv = 1;
 ?>
 <script>
     const links_menu = document.querySelectorAll(".links_menu");
@@ -34,28 +34,32 @@
             <tr>
                 <th>Id</th>
                 <th>Nombre</th>
-                <th>Cedula</th>
-                <th>Cargo</th>
-                <th>Password</th>
+                <th>Codigo</th>
+                <th>Telefono</th>
+                <th>Email</th>
+                <th>id_categoria</th>
+                <th>id_instituto</th>
                 <th>Accion</th>
             </tr>
         </thead>
         <tbody>
-        <?php foreach($all_users as $user){?>
-            <?php $datauser = new Usuario(); $datauser->parseArray($user)?>
-            <tr class = "<?= ($cout_user % 2 == 0) ? 'fila-activa':''?>">
-                <td><?= $datauser->id ?></td>
-                <td><?= $datauser->getFullname() ?></td>
-                <td><?= $datauser->cedula ?></td>
-                <td><?= $datauser->cargo ?></td>
-                <td><?= $datauser->pass ?></td>
+        <?php foreach($all_inv as $inv){?>
+            <?php $datainv = new Investigador(); $datainv->parseArray($inv)?>
+            <tr class = "<?= ($cout_inv % 2 == 0) ? 'fila-activa':''?>">
+                <td><?= $datainv->id ?></td>
+                <td><?= $datainv->nombre ?></td>
+                <td><?= $datainv->codigo ?></td>
+                <td><?= $datainv->telefono ?></td>
+                <td><?= $datainv->email ?></td>
+                <td><?= $datainv->id_categoria ?></td>
+                <td><?= $datainv->id_instituto ?></td>
                 <td class="acciones-btn">
-                    <a href="./index.php?cod_user=<?= $datauser->id?>" class="btn-1">Eliminar</a>
-                    <a href="./editar.php?cod=<?= $datauser->id ?>" class="btn-2">Editar</a>
+                    <a href="./index.php?cod_user=<?= $datainv->id?>" class="btn-1">Eliminar</a>
+                    <a href="./editar.php?cod=<?= $datainv->id ?>" class="btn-2">Editar</a>
                 </td>
             </tr>
 
-        <?php $cout_user++; } ?>
+        <?php $cout_inv++; } ?>
         </tbody>
     </table>
 </div>

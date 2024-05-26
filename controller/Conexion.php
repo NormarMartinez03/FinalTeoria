@@ -3,7 +3,7 @@
 class Conexion{
     const HOME = 'https://localhost/propuesta/';
     private $server="localhost";
-    private $database = "PRESTAMOS";
+    private $database = "investigacion";
     private $user="root";
     private $pass = "";
 

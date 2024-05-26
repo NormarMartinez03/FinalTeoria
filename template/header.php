@@ -104,9 +104,9 @@
                     </a>
                    
                     <ul class="sub-menu hidden">
-                        <li><a href="#">Item I</a></li>
-                        <li><a href="#">Item II</a></li>
-                        <li><a href="#">Item III</a></li>
+                        <li><a href="#">Linea de Inv.</a></li>
+                        <li><a href="#">Fuente Legal</a></li>
+                        <li><a href="#">Presupuesto</a></li>
                     </ul>
                 </div>
             </ul>
@@ -125,22 +125,6 @@
                     </div>
                 </div>
             </a> -->
-            <ul class="selected">
-                <div class="option">
-                    <a href="<?=$home?>view/fuente">
-                        <div class="icon_title">
-                            <i class="fa-solid fa-scale-unbalanced-flip" title="Fuente Legal"></i>
-                            <h4>Fuente Legal</h4>
-                        </div>
-                    </a>
-                    
-                    <ul class="sub-menu hidden">
-                        <li><a href="#">Item I</a></li>
-                        <li><a href="#">Item II</a></li>
-                        <li><a href="#">Item III</a></li>
-                    </ul>
-                </div>
-            </ul>
 
            <!--  <ul class="selected">
                 <div class="option">
@@ -157,17 +141,15 @@
             </ul> -->
             <ul class="selected">
                 <div class="option">
-                    <a href="<?=$home?>view/facultad">
+                    <a href="<?=$home?>view/instituto">
                         <div class="icon_title">
                             <i class="fa-solid fa-landmark" title="Facultad"></i>
-                            <h4>Facultad</h4>
+                            <h4>Instituto</h4>
                         </div>
                     </a>
                     
                     <ul class="sub-menu hidden">
-                        <li><a href="#">Item I</a></li>
-                        <li><a href="#">Item II</a></li>
-                        <li><a href="#">Item III</a></li>
+                        <li><a href="#">Facultad</a></li>
                     </ul>
                 </div>
             </ul>
@@ -209,12 +191,7 @@
                             <h4>Organismo</h4>
                         </div>
                     </a>
-                    
-                    <ul class="sub-menu hidden">
-                        <li><a href="#">Item I</a></li>
-                        <li><a href="#">Item II</a></li>
-                        <li><a href="#">Item III</a></li>
-                    </ul>
+            
                 </div>
             </ul>
 <!-- 

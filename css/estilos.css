@@ -158,8 +158,8 @@ header {
 }
 
 .contenedor-tabla thead tr {
-  background-color:v var(--color_menu);
-  color: #ffffff;
+  background-color: var(--color_menu);
+  color: white;
   text-align: left;
   font-weight: bold;
 }
@@ -507,7 +507,7 @@ header {
   font-weight: 500;
 }
 .icon_title{
-  padding: 15px 20px;
+  padding: 20px 20px;
 }
 .option:hover .icon_title::before{
   content: '';
