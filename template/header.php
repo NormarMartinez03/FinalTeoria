@@ -8,7 +8,7 @@
     <title>Propuesta de Investigacion</title>
 
     <!-- style cotumize -->
-    <link rel="stylesheet" href="<?= $home ?>css/estilos.css">
+    <link rel="stylesheet" href="css/estilos.css">
    <!--  <link rel="stylesheet" href="css/datatables.css" />  -->
 
      <!-- JS QUERY -->
